@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color-white: #ffffff;
+    --text-color-white-100: #E1E1E6;
+    --text-color-grey: #C4C4CC;
+    --text-color-blue: #02799D;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+nav {
+    background-color: transparent;
+    position: absolute;
+    top: 4.0rem;
+    left: 7.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
+}
+
+nav a {
+    color: var(--text-color-grey);
+    text-decoration: none;
+    margin-left: 3.2rem;
+    font-weight: normal;
+    font-size: 2.1rem;
+}
+
+nav a.selected {
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: var(--text-color-white);
+}
+
+.home {
+    background-image: url("./assets/mountains-universe-1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    font-size: 4.8rem;
+    color: var(--text-color-white-100);
+
+    margin-bottom: 2.4rem;
+}
+
+.home button {
+    background: transparent;
+    border-radius: 0.5rem;
+    border-color: var(--text-color-white);
+    
+    padding: 1.2rem 3.2rem;
+    color: var(--text-color-white);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.home button:hover {
+    cursor: pointer;
+    background: var(--text-color-white);
+    border-radius: 0.5rem;
+    border: none;
+    
+    padding: 1.2rem 3.2rem;
+    color: var(--text-color-blue);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.universe {
+    background-image: url("./assets/mountains-universe02.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.universe h1, .exploration h1 {
+    font-size: 4.8rem;
+    color: var(--text-color-white-100);
+
+    margin-top: 18.5rem;
+    margin-left: 10.2rem;
+}
+
+.universe p, .exploration p {
+    font-size: 1.8rem;
+    color: var(--text-color-white-100);
+
+    margin-top: 1.6rem;
+    margin-left: 10.2rem;
+
+    max-width: 64.8rem;
+}
+
+.exploration {
+    background-image: url("./assets/mountains-universe-3.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
